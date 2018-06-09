@@ -42,7 +42,7 @@ a {
 }
 
 p{
-    font-size: 15px;
+    font-size: 17px;
     line-height: 1.8;
 }
 
@@ -89,7 +89,7 @@ p{
     font-size: 15px;
     transition: all 0.4s;
     background: #fff;
-    color: #ee3158 !important;
+    color: #1a88fa !important;
 }
 
 .btn-custom-white:hover,
@@ -108,7 +108,7 @@ p{
 .btn-custom {
     font-size: 15px;
     transition: all 0.4s;
-    background: #ee3158;
+    background: #1a88fa;
     color: #fff !important;
 }
 
@@ -122,7 +122,7 @@ p{
 .btn-custom:hover,
 .open > .dropdown-toggle.btn-custom {
     box-shadow: none !important;
-    background: #d12043;
+    background: #46a0fe;
 }
 
 .btn {
@@ -138,7 +138,7 @@ p{
 }
 
 .text-custom{
-    color: #ee3158;
+    color: #1a88fa;
 }
 
 .bg-custom{
@@ -183,7 +183,7 @@ p{
 .navbar-custom .navbar-nav li.active a,
 .navbar-custom .navbar-nav li a:hover,
 .navbar-custom .navbar-nav li a:active {
-    color: #ee3158 !important;
+    color: #1a88fa !important;
 }
 
 .navbar-toggle {
@@ -246,7 +246,7 @@ p{
 .nav-sticky.navbar-custom .navbar-nav li.active a,
 .nav-sticky.navbar-custom .navbar-nav li a:hover,
 .nav-sticky.navbar-custom .navbar-nav li a:active {
-    color: #ee3158 !important;
+    color: #1a88fa !important;
 }
 
 .nav-sticky.navbar-custom .navbar-toggles {
@@ -284,7 +284,7 @@ p{
 ================================*/
 
 .bg-home {
-    background-image: url('../images/home/home-bg.jpg');
+    background-image: url(../images/comptable.jpg);
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -456,11 +456,11 @@ p{
     width: 56px;
     line-height: 56px;
     border-radius: 50%;
-    border: 1px solid #ee3158;
+    border: 1px solid #1a88fa;
     text-align: center;
     display: inline-block;
     font-weight: 600;
-    border-right: 4px solid #ee3158;
+    border-right: 4px solid #1a88fa;
 }
 
 .features h4 {
