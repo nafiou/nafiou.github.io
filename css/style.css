@@ -5,6 +5,7 @@
    File Description: Main CSS file of the template
 */
 
+
 /****************************
 *   1  :  Helper            *
 *   2  :  Navbar-custom     *
@@ -41,7 +42,7 @@ a {
     outline: none !important;
 }
 
-p{
+p {
     font-size: 17px;
     line-height: 1.8;
 }
@@ -100,7 +101,7 @@ p{
 .btn-custom-white:active,
 .btn-custom-white:focus,
 .btn-custom-white:hover,
-.open > .dropdown-toggle.btn-custom-white {
+.open>.dropdown-toggle.btn-custom-white {
     background: #f1f0f0;
     box-shadow: none !important;
 }
@@ -120,7 +121,7 @@ p{
 .btn-custom:active,
 .btn-custom:focus,
 .btn-custom:hover,
-.open > .dropdown-toggle.btn-custom {
+.open>.dropdown-toggle.btn-custom {
     box-shadow: none !important;
     background: #46a0fe;
 }
@@ -137,13 +138,14 @@ p{
     padding: 10px 22px;
 }
 
-.text-custom{
+.text-custom {
     color: #1a88fa;
 }
 
-.bg-custom{
+.bg-custom {
     background-color: #ee3158;
 }
+
 
 /*===============================
        2. Navbar Custom
@@ -263,6 +265,7 @@ p{
     color: #000 !important;
 }
 
+
 /*==============================
        3. Title
 ================================*/
@@ -271,13 +274,14 @@ p{
     font-weight: 700;
 }
 
-.title h1{
+.title h1 {
     position: absolute;
     color: rgba(0, 0, 0, 0.1);
     left: 0px;
     right: 0px;
     top: -45px;
 }
+
 
 /*==============================
         4. Home
@@ -327,7 +331,7 @@ p{
     background-size: cover;
 }
 
-.clients-img{
+.clients-img {
     position: absolute;
     top: 108px;
 }
@@ -341,6 +345,7 @@ p{
 .clients-img img:hover {
     opacity: 0.6;
 }
+
 
 /********* DEMO 2 ********/
 
@@ -360,6 +365,7 @@ p{
 .registration-input-box:focus {
     border-color: #ee3158;
 }
+
 
 /*******DEMO 3*******/
 
@@ -392,6 +398,7 @@ p{
     margin: 0px auto;
 }
 
+
 /********DEMO 4**********/
 
 .home-dashboard {
@@ -405,6 +412,7 @@ p{
     background: linear-gradient(rgb(72, 85, 99), rgb(41, 50, 60));
     position: relative;
 }
+
 
 /********DEMO 5**********/
 
@@ -436,6 +444,7 @@ p{
     max-width: 700px;
 }
 
+
 /********DEMO 6**********/
 
 .bg-home-half {
@@ -445,6 +454,7 @@ p{
     padding: 250px 0px 200px;
     position: relative;
 }
+
 
 /************************
     5. Welcome box
@@ -467,6 +477,7 @@ p{
     font-size: 18px;
     font-weight: 600;
 }
+
 
 /************************
    6. SERVICES
@@ -690,6 +701,7 @@ p{
     font-weight: 600;
 }
 
+
 /*************************
       9.  BLOG
 ***************************/
@@ -746,11 +758,12 @@ p{
     font-size: 14px;
 }
 
+
 /************************
        11. PRICE
 **************************/
 
-.price{
+.price {
     box-shadow: 0px 40px 40px rgba(0, 0, 0, 0.05);
     border-radius: 12px;
 }
@@ -791,6 +804,7 @@ p{
     margin: 15px;
     font-size: 15px;
 }
+
 
 /************************
        12. CONTACT
@@ -859,11 +873,12 @@ textarea.form-control {
     font-size: 22px;
 }
 
+
 /************************
        13. FOOTER
 *************************/
 
-.footer{
+.footer {
     padding-top: 80px;
     padding-bottom: 40px;
     color: #818d9c;
@@ -880,7 +895,7 @@ textarea.form-control {
     font-size: 14px;
 }
 
-.footer-support{
+.footer-support {
     font-weight: 600;
 }
 
@@ -965,7 +980,6 @@ textarea.form-control {
     .clients-img {
         display: none;
     }
-    
 }
 
 @media (min-width:768px) and (max-width: 1024px) {
@@ -978,4 +992,38 @@ textarea.form-control {
     .clients-img {
         top: 7px;
     }
+}
+
+.col-md-12.rubrique_title {
+    background-color: #647ef4;
+    padding: 1.5em;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 1px 1px grey;
+    margin-top: 1em;
+}
+
+.forum_content {
+    margin-top: 1.5em;
+}
+
+.forum_subtitle {
+    background: #c1ac10;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+.forum_liste {
+    padding-top: 0.5em;
+    border-bottom: solid 1px #ececec;
+    padding: 2em;
+}
+
+.forum_icon {
+    color: #878889;
+    position: relative;
+    top: 0.2em;
 }
