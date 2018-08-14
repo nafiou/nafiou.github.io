@@ -11,6 +11,11 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
 });
+$(document).ready(function(){
+   setTimeout(function(){
+      $("#prospec").modal("show");
+    }, 3000)
+});
 
 ! function($) {
     "use strict";
