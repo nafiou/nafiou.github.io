@@ -56,7 +56,7 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 
 
 var routes = [
-    { path: '', redirectTo: '/accueil', pathMatch: 'full' },
+    { path: '', component: _index_index_component__WEBPACK_IMPORTED_MODULE_2__["IndexComponent"] },
     { path: 'accueil', component: _index_index_component__WEBPACK_IMPORTED_MODULE_2__["IndexComponent"] },
     { path: 'bibliotheque', component: _bibliotheque_bibliotheque_component__WEBPACK_IMPORTED_MODULE_5__["BibliothequeComponent"] },
     { path: 'bibliotheque/:id', component: _article_detail_article_detail_component__WEBPACK_IMPORTED_MODULE_6__["ArticleDetailComponent"] },
@@ -99,7 +99,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "\n<router-outlet></router-outlet>"
+module.exports = "<app-navbar></app-navbar>\n<router-outlet> \n</router-outlet>\n<app-footer></app-footer>"
 
 /***/ }),
 
@@ -173,12 +173,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _bibliotheque_bibliotheque_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./bibliotheque/bibliotheque.component */ "./src/app/bibliotheque/bibliotheque.component.ts");
 /* harmony import */ var _article_detail_article_detail_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./article-detail/article-detail.component */ "./src/app/article-detail/article-detail.component.ts");
 /* harmony import */ var _phototeque_phototeque_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./phototeque/phototeque.component */ "./src/app/phototeque/phototeque.component.ts");
+/* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./navbar/navbar.component */ "./src/app/navbar/navbar.component.ts");
+/* harmony import */ var _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./footer/footer.component */ "./src/app/footer/footer.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
 
 
 
@@ -211,6 +215,8 @@ var AppModule = /** @class */ (function () {
                 _bibliotheque_bibliotheque_component__WEBPACK_IMPORTED_MODULE_15__["BibliothequeComponent"],
                 _article_detail_article_detail_component__WEBPACK_IMPORTED_MODULE_16__["ArticleDetailComponent"],
                 _phototeque_phototeque_component__WEBPACK_IMPORTED_MODULE_17__["PhototequeComponent"],
+                _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_18__["NavbarComponent"],
+                _footer_footer_component__WEBPACK_IMPORTED_MODULE_19__["FooterComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -771,6 +777,69 @@ var DetailForumComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/footer/footer.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/footer/footer.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/footer/footer.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/footer/footer.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<section class=\"footer bg-dark\">\n  <div class=\"container\">\n      <div class=\"row\">\n          <div class=\"col-lg-4\">\n              <div class=\"footer-menu\">\n                  <h5 class=\"mb-4 text-uppercase\">DIGNITÉ CONSULTING</h5>\n                  <p>\n                      7 ans d'ancienneté au service de la croissance économique et du progrès social surtout de l'entrepreneuriat. Une équipe de jeune diplôme pluridisciplinaire de haut niveau et professionnel ,qui accumule expérience, la maîtrise et le savoir faire efficace,\n                      dont les connaissances sont actualisées et formées à la législation du jour.\n                  </p>\n                  <div class=\"text-white\">\n                      <a href=\"#facebook\"><i class=\"mdi mdi-facebook facebook footer_mdi\"></i></a>\n                      <a href=\"#twitter\"><i class=\"mdi mdi-twitter twitter footer_mdi\"></i></a>\n                      <a href=\"#google\"><i class=\"mdi mdi-google google footer_mdi\"></i></a>\n                      <a href=\"#apple\"><i class=\"mdi mdi-apple apple footer_mdi\"></i></a>\n                  </div>\n              </div>\n          </div>\n\n          <div class=\"col-lg-2\">\n              <div class=\"footer-menu\">\n                  <h5 class=\"mb-4 text-uppercase\">A Propos de Nous</h5>\n                  <ul class=\"text-muted list-unstyled\">\n                      <li><a href=\"#feature\">Qui sommes nous?</a></li>\n                      <li><a href=\"#portfolio\">Services</a></li>\n                      <li><a href=\"#team\">Equipe</a></li>\n                  </ul>\n              </div>\n          </div>\n          <div class=\"col-lg-4\">\n              <div class=\"footer-menu\">\n                  <h5 class=\"mb-4 text-uppercase\">Contactez nous</h5>\n                  <p>\n                      Face au 12e Arrondissement, - Deux-plateaux - Vallon Cocody - 20 BP 624 Abidjan 20 Abidjan - Côte d’Ivoire\n                  </p>\n                  <span class=\"footer-support\">afrique.dignite@yahoo.ca</span>\n              </div>\n          </div>\n      </div>\n\n      <div class=\"row\">\n          <div class=\"col-lg-12\">\n              <div class=\"text-center mt-5\">\n                  <p class=\"mb-0\">2018 © DIGNITÉ CONSULTING. Tous Droits Réservé</p>\n              </div>\n          </div>\n      </div>\n  </div>\n</section>"
+
+/***/ }),
+
+/***/ "./src/app/footer/footer.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/footer/footer.component.ts ***!
+  \********************************************/
+/*! exports provided: FooterComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FooterComponent", function() { return FooterComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var FooterComponent = /** @class */ (function () {
+    function FooterComponent() {
+    }
+    FooterComponent.prototype.ngOnInit = function () {
+    };
+    FooterComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-footer',
+            template: __webpack_require__(/*! ./footer.component.html */ "./src/app/footer/footer.component.html"),
+            styles: [__webpack_require__(/*! ./footer.component.css */ "./src/app/footer/footer.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], FooterComponent);
+    return FooterComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/forum-form/forum-form.component.css":
 /*!*****************************************************!*\
   !*** ./src/app/forum-form/forum-form.component.css ***!
@@ -1253,6 +1322,69 @@ var LocalStorageService = /** @class */ (function () {
         __metadata("design:paramtypes", [angular_webstorage_service__WEBPACK_IMPORTED_MODULE_1__["WebStorageService"]])
     ], LocalStorageService);
     return LocalStorageService;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/navbar/navbar.component.css":
+/*!*********************************************!*\
+  !*** ./src/app/navbar/navbar.component.css ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/navbar/navbar.component.html":
+/*!**********************************************!*\
+  !*** ./src/app/navbar/navbar.component.html ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-expand-lg fixed-top navbar-custom sticky\">\n  <div class=\"container\">\n      <a class=\"navbar-brand logo\" href=\"#\">DIGNITÉ CONSULTING</a>\n      <button class=\"navbar-toggler collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#navbarNav\" aria-controls=\"navbarNav\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">\n          <i class=\"mdi mdi-menu\"></i>\n      </button>\n      <div class=\"collapse navbar-collapse\" id=\"navbarNav\">\n          <ul class=\"navbar-nav ml-auto\">\n              <li class=\"nav-item active\">\n                  <a class=\"nav-link my-link\" href=\"#home\">Acceuil</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a class=\"nav-link my-link\" href=\"#feature\">Qui Sommes Nous</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a class=\"nav-link my-link\" href=\"#portfolio\">Nos Services</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a class=\"nav-link my-link\" href=\"#team\">Equipes</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a class=\"nav-link\" routerLink=\"/forum\">Forum</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a class=\"nav-link\" routerLink=\"/bibliotheque\">Bibliothèque</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a class=\"nav-link\" routerLink=\"/photo\">Phototèque</a>\n              </li>\n              <li class=\"nav-item\">\n                  <a class=\"nav-link my-link\" href=\"#contact\">Contact</a>\n              </li>\n          </ul>\n      </div>\n  </div>\n</nav>\n"
+
+/***/ }),
+
+/***/ "./src/app/navbar/navbar.component.ts":
+/*!********************************************!*\
+  !*** ./src/app/navbar/navbar.component.ts ***!
+  \********************************************/
+/*! exports provided: NavbarComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "NavbarComponent", function() { return NavbarComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var NavbarComponent = /** @class */ (function () {
+    function NavbarComponent() {
+    }
+    NavbarComponent.prototype.ngOnInit = function () {
+    };
+    NavbarComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-navbar',
+            template: __webpack_require__(/*! ./navbar.component.html */ "./src/app/navbar/navbar.component.html"),
+            styles: [__webpack_require__(/*! ./navbar.component.css */ "./src/app/navbar/navbar.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], NavbarComponent);
+    return NavbarComponent;
 }());
 
 

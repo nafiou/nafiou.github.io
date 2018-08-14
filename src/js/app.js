@@ -4,6 +4,13 @@
    File Description: Main JS file of the template
 */
 
+$(document).on('click', 'a[href^="#"]', function (event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
+});
 
 ! function($) {
     "use strict";
@@ -23,16 +30,17 @@
         });
     },
 
-    Borial.prototype.initSmoothLink = function() {
-        // Smooth scroll
-        $('.my-link').on('click', function(event) {
-            var $anchor = $(this);
-            $('html, body').stop().animate({
-                scrollTop: $($anchor.attr('href')).offset().top - 0
-            }, 1500, 'easeInOutExpo');
-            event.preventDefault();
-        });
-    },
+    // Borial.prototype.initSmoothLink = function() {
+    //     // Smooth scroll
+    //     $('.my-link').on('click', function(event) {
+    //         var $anchor = $(this);
+    //         $('html, body').stop().animate({
+    //             scrollTop: $($anchor.attr('href')).offset().top - 0
+    //         }, 1500, 'easeInOutExpo');
+    //         event.preventDefault();
+    //     });
+    // },
+
 
     Borial.prototype.initTestimonials = function() {
         //Owl Carousel
@@ -139,7 +147,7 @@
 
      Borial.prototype.init = function() {
         this.initStickyMenu();
-        this.initSmoothLink();
+        // this.initSmoothLink();
         this.initTestimonials();
         this.initScrollspy();
         this.initPortfolioFilter();
