@@ -11,12 +11,20 @@ $(document).on('click', 'a[href^="#"]', function (event) {
         scrollTop: $($.attr(this, 'href')).offset().top
     }, 500);
 });
+<<<<<<< HEAD
 
 $(document).ready(function(){
     setTimeout(function(){
      $("#prospec").modal("show");
     }, 3000);
 })
+=======
+$(document).ready(function(){
+   setTimeout(function(){
+      $("#prospec").modal("show");
+    }, 3000)
+});
+>>>>>>> e7254380db7ab77f3ac74326b43d4cd756a09d73
 
 ! function($) {
     "use strict";
