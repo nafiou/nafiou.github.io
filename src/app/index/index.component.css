@@ -1,0 +1,108 @@
+.modal-lg {
+    max-width: 90%;
+}
+.modal-pros { 
+    min-width: 60%;
+}
+#ressource{
+
+}
+.forum_subtitle{
+    background-image: url(src/images/books-1012088_1280.jpg);
+    background-size: cover;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+.book_block{
+    margin-top: 2em;
+    background-color: #fafaf9 !important;
+}
+.book_description{
+    min-height: 12em;
+}
+.btn-light{
+    background-color: #c1ac10;
+    color: white;
+    font-weight: bold;
+}
+.book_title{
+    border-bottom: solid 2px #c1ac2a;
+    color: #888886;
+    background: #c1ac2a;
+    color: white;
+    padding-top: 0.5em;
+}
+.book_description{
+    padding: 0.8em;
+}
+.modal-content {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.book_description{
+    padding: 0.8em;
+}
+.article_block{
+    margin-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-left: solid 1em #c1ac10;
+    margin-bottom: 2em;
+    font-size: 1.2em;
+}
+.services-blog.mt-4 {
+    border-radius: 0.5em;
+    padding: 0;
+    background: #0066c4;
+    color: white;
+    padding: 0.5em;
+    min-height: 4em;
+}
+h5.title_sem {
+    color: #0062cc;
+    font-weight: bold;
+    font-size: 1em;
+    padding-left: 1.5em;
+}
+.border_left{
+    border-left: solid 1em #c1ac10;
+}
+.col-lg-12.info {
+    height: 2em;
+    background-color: white;
+    border-radius: 1em;
+}
+.col-lg-2.title_inf[_ngcontent-c3] {
+    height: 2em;
+    background: red;
+    color: white;
+    font-weight: bold;
+    padding-top: 0.2em;
+    animation: blinker 1s linear infinite;
+}
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+  .col-lg-10.blackek[_ngcontent-c3] {
+    padding-top: 0.2em;
+    height: 2em;
+    background: white;
+}

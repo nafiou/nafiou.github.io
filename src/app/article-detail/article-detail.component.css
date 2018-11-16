@@ -1,0 +1,45 @@
+.forum_subtitle{
+    background-image: url(src/images/books-1012088_1280.jpg);
+    background-size: cover;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+.book_block{
+    margin-top: 2em;
+    background-color: #fafaf9 !important;
+}
+.book_description{
+    min-height: 12em;
+}
+.btn-light{
+    background-color: #c1ac10;
+    color: white;
+    font-weight: bold;
+}
+.book_title{
+    border-bottom: solid 2px #c1ac2a;
+    color: #888886;
+    background: #c1ac2a;
+    color: white;
+    padding-top: 0.5em;
+}
+.book_description{
+    padding: 0.8em;
+}
+.article_block{
+    margin-top: 2em;
+    padding-left: 2em;
+    padding-right: 2em;
+    border-left: solid 1em #c1ac10;
+    margin-bottom: 2em;
+    font-size: 1.2em;
+}
+.titre_article{
+    color: #787878;
+    font-weight: bold;
+    /* text-align: center; */
+    margin-bottom: 1em;
+}

@@ -1,0 +1,185 @@
+<section class="section" id="home">
+  <div class="bg-overlay" st></div>
+  <div class="home-center" style="background: #fffffe;
+position: relative;
+z-index: 10;">
+      <div class="home-desc-center">
+          <div class="container">
+              <!-- <div class="row">
+                  <div class="col-md-12 rubrique_title">
+                      Bienvenue sur notre forum
+                  </div>
+
+              </div> -->
+              <div class="row forum_content">
+                  <div class="col-md-12 forum_subtitle">
+                      <div class="row">
+                            <div class="col-md-8" style="font-size: 1.5em;">
+                              BIENVENUE SUR NOTRE FORUM DE DISCUSSIONS
+                            </div>
+                            <div class="col-md-4">
+                               <button style="border: none;
+                               float: right;
+                               padding: 0.3em;
+                               background-color: white;
+                               color: #c1ac2a;
+                               border-radius: 0.5em;" data-toggle="modal" (click)="NewDiscussion()">Créer une discussion</button>
+                            </div>  
+                      </div>
+                           
+                </div>
+                 <div *ngFor="let forum of forums; let i=index" class="col-md-12">
+                    
+                    <div class="col-md-12 forum_liste" >
+                      <div class="row">
+                            <div class="col-md-1" (click)="Detail(forum.id_frm)">
+                                  <i class="material-icons forum_icon">
+                                          textsms
+                                          </i>
+                            </div>
+                            <div class="col-md-3" (click)="Detail(forum.id_frm)">
+                                {{ forum.description_frm | slice:0:40 }}...
+                            </div>
+                            <div class="col-md-3" (click)="Detail(forum.id_frm)">
+                                <i class="material-icons forum_icon">
+                                            remove_red_eye
+                                            </i> {{forum.nom_use}}
+                            </div>
+                            <div class="col-md-1">
+                                <i class="material-icons forum_icon">
+                                            person
+                                            </i> 125
+                            </div>
+                            <div class="col-md-2">
+                            </div>
+                            <div class="col-md-1" *ngIf="CurentuserId === forum.iduse_frm">
+                              <span>
+                                  <i class="material-icons" style="color: #868788;" (click)="Delete(forum.id_frm)">
+                                      delete_forever
+                                      </i>
+                              </span>
+                            </div>
+                            <div class="col-md-1" *ngIf="CurentuserId == forum.iduse_frm">
+                              <span>
+                                  <i class="material-icons" style="color: #868788;" (click)="Edit(i)">
+                                         create
+                                      </i>
+                              </span>
+
+                            </div>
+                        </div>
+                      </div>
+                  
+                 </div>
+                  
+
+              </div>
+          </div>
+      </div>
+      </div>
+</section>
+<!-- Modal -->
+<div class="modal fade" id="ForumModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Nouvelle discussion</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Titre</label>
+                      <input [(ngModel)]="forum.titre_frm" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Titre de la discussion" name="titre">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Description</label>
+                        <textarea [(ngModel)]="forum.description" class="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+              <button type="button" class="btn btn-primary" (click)="save()">Créer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Nouvelle discussion</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Nom & Prénom(s)</label>
+                      <input [(ngModel)]="user.nom" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Nom & prénom(s)" name="titre">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                      <input [(ngModel)]="user.email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" name="email">
+                    </div>
+                  </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+              <button type="button" class="btn btn-primary" (click)="Inscript()">Continuer</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="AlertModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Confirmation</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                 Veuillez confirmer votre choix 
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Non</button>
+                <button type="button" class="btn btn-primary" (click)="DeleteConfirm()">Oui</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="EditForumModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Nouvelle discussion</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleInputEmail1">Titre</label>
+                          <input [(ngModel)]="forum.titre_frm" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Titre de la discussion" name="titre">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Description</label>
+                            <textarea [(ngModel)]="forum.description" class="form-control" id="exampleFormControlTextarea1" rows="3" name="description"></textarea>
+                        </div>
+                      </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
+                  <button type="button" class="btn btn-primary" (click)="editForum()">Modifier</button>
+                </div>
+              </div>
+            </div>
+          </div>
+<!-- HOME END-->

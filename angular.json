@@ -20,12 +20,20 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/api",
+              "src/css",
+              "src/fonts",
+              "src/images",
+              "src/js"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "src/css/style.css"
             ],
-            "scripts": []
+            "scripts": ["node_modules/jquery/dist/jquery.min.js",
+              "node_modules/popper.js/dist/popper.min.js",
+            "node_modules/bootstrap/dist/js/bootstrap.min.js"]
           },
           "configurations": {
             "production": {

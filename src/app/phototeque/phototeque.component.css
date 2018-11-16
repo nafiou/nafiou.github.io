@@ -1,0 +1,23 @@
+.img_block{
+    margin-top: 2em;
+}
+.forum_subtitle{
+    background-image: url(src/images/photo.jpg);
+    background-size: cover;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+img.d-block.w-100 {
+    height: 30em;
+    width: auto !important;
+    margin: auto;
+}
+div#carouselExampleIndicators {
+    margin: auto;
+}
+div#carouselExampleIndicators1 {
+    margin: auto;
+}

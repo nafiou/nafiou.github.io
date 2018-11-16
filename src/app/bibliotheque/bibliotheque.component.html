@@ -1,0 +1,62 @@
+<section class="section" id="home">
+    <div class="bg-overlay" st></div>
+    <div class="home-center" style="background: #fffffe;
+  position: relative;
+  z-index: 10;">
+        <div class="home-desc-center">
+            <div class="container">
+                <!-- <div class="row">
+                    <div class="col-md-12 rubrique_title">
+                        Bienvenue sur notre forum
+                    </div>
+  
+                </div> -->
+                <div class="row forum_content">
+                    <div class="col-md-12 forum_subtitle">
+                        <div class="row">
+                              <div class="col-md-8" style="font-size: 1.5em;">
+                                NOTRE BIBLIOTHEQUE
+                              </div>
+                              <div class="col-md-4">
+                                
+                              </div>  
+                        </div>
+                             
+                  </div>
+                  <div class="col-md-12">
+                  <div class="row">
+                      <div class="col-md-4" *ngFor="let article of articles">
+                          <div class="book_block shadow-sm p-3 mb-5 bg-white rounded">
+                              <div class="row">
+                                  <div class="col-md-12 book_title">
+                                     <h3>
+                                       {{article.titre}}
+                                     </h3>
+                                  </div>
+                                 </div>
+                                 <div class="row">
+                                   <div class="col-md-12 book_description">
+                                    {{article.description | slice:0:400 }}...
+                                   </div>
+                                 </div>
+                                 <div class="row">
+                                  <div class="col-md-8">
+             
+                                  </div>
+                                  <div class="col-md-4">
+                                     <a routerLink="/bibliotheque/{{article.id}}">
+                                     <button type="button" class="btn btn-light">Lire</button>
+                                     </a>
+                                  </div>
+                                 </div>
+                          </div>
+                        </div>
+                  </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        </div>
+  </section>
+  <!-- HOME END-->
+  

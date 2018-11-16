@@ -1,0 +1,52 @@
+.forum_comment{
+    padding: 0.5em;
+    width: 100%;
+    background: #dddddd;
+    border-radius: 1em;
+    margin-top: 1em;
+}
+.user_name{
+    font-weight: bold;
+    color: #787878;
+}
+.user_icon{
+    background: #bbb600;
+    height: 3em;
+    width: 3em;
+    display: inline-block;
+    border-radius: 1.5em;
+    text-align: center;
+    padding-top: 0.7em;
+}
+.btn-primary{
+    float: right;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    background-color: #5591ff;
+    border-color: #2f90f4;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.5), 2px 2px 5px rgba(0,0,0,0.5), -1px -1px 2px rgba(0,0,0,0.2);
+}
+.titr_discuss{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #5f5e5e; 
+}
+.owner_icon{
+    color: #938f03; 
+}
+.user_owner{
+    color: #767575;
+    margin-top: -1em;
+    display: inline-block;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.forum_subtitle{
+    background-image: url(src/images/coaching.jpg);
+    background-size: cover;
+    padding: 1em;
+    color: white;
+    font-weight: bold;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
